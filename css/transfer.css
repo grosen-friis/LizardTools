@@ -1,0 +1,58 @@
+div.table-bg-grey {
+    outline: 1px solid grey;
+    background-color: silver;
+}
+
+div.table-head-section {
+    outline: 1px dashed grey;
+    background-color: silver;
+}
+
+div.table-body-section {
+    outline: 1px solid grey;
+    background-color: silver;
+}
+
+ul.url-list li {
+    font-family: courier;
+}
+
+p.html {
+    font-family: courier;
+}
+
+.red {
+    color: Red;
+}
+
+.green {
+    color: Green;
+}
+
+#uploadStatus {
+    height: 20px;
+    width: 206px;
+    outline: 1px solid green;
+    visibility: hidden;
+}
+
+#uploadStatusProgress {
+    height: 20px;
+    width: 0px;
+    background-color: green;
+}
+
+#uploadErrorMessage {
+    color: red;
+}
+
+#uploadFileResult {
+    visibility: hidden;
+    width: 300px;
+}
+
+#uploadFileLink {
+    width: 300px;
+}
+
+

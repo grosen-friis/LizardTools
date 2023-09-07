@@ -1,0 +1,30 @@
+div.table-bg-grey {
+    outline: 1px solid grey;
+    background-color: silver;
+}
+
+div.table-head-section {
+    outline: 1px dashed grey;
+    background-color: silver;
+}
+
+div.table-body-section {
+    outline: 1px solid grey;
+    background-color: silver;
+}
+
+ul.url-list li {
+    font-family: courier;
+}
+
+p.html {
+    font-family: courier;
+}
+
+.red {
+    color: Red;
+}
+
+.green {
+    color: Green;
+}

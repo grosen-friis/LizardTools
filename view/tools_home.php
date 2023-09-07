@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://grosen.tools" />
     <link rel="alternate" hreflang="en" href="https://grosen.tools" />
     <link rel="alternate" hreflang="x-default" href="https://grosen.tools" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <script type="application/javascript" src="/js/common.js"></script>
 
 <?php } else if ($_viewFileSection == 'body') { ?>
@@ -33,6 +33,18 @@
                         <td><a href="/password-generator">Online password generator</a></td>
                         <td>
                             <p>Generate up to 50 passwords with the length and content you specify</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/spintext-generator">Online spin-text generator</a></td>
+                        <td>
+                            <p>Generate and download thousands of unique texts based on your spintax.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/transfers">Transfer large file</a></td>
+                        <td>
+                            <p>Upload large file and get download link that you can share.</p>
                         </td>
                     </tr>
                 </tbody>
@@ -82,6 +94,45 @@
 
                         </ul>
                         <p style="word-break: break-all;" class="is-family-monospace">Click here to test: <a href="https://grosen.tools/api/password/length/24/count/5/datasets/125">/api/password/length/24/count/5/datasets/125</a></p>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <table class="table is-striped">
+                <thead>
+                <tr>
+                    <th><span class="tag is-medium">Method</span></th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p>Generate spin-texts in the amount and via the spintax you specify</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>POST:</td>
+                    <td>
+                        <p style="word-break: break-all;" class="is-family-monospace">/api/spintext/count/<strong>{number_of_texts}</strong>/format/<strong>{csc_txt}</strong>/return/<strong>{text_zip}</strong></p>
+                        <p>POST: spintax: Your spintax to be used to generate the spin-text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <ul>
+                            <li>Output format: JSON</li>
+                            <li>count: Number of spin-texts to be generated. If your spin-tax is not able to generate the amount you specify the tool will return as many as it was possible to generate.</li>
+                            <li>format: [csv|txt]</li>
+                            <li>return: [text|zip]. Beware [text] can only be combined with format:[csv]. [zip] can be combined with both formats and the data returned will contains a unique URL where you can download the zip-file that contains the spin-texts file(s).</li>
+
+                        </ul>
+                        <p style="word-break: break-all;" class="is-family-monospace">To test this you need to use a tool like <a href="https://www.postman.com/downloads/">PostMan</a></p>
 
                     </td>
                 </tr>

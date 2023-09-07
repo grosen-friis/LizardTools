@@ -11,6 +11,8 @@
     <link rel="canonical" href="https://grosen.tools/password-generator" />
     <link rel="alternate" hreflang="en" href="https://grosen.tools/password-generator" />
     <link rel="alternate" hreflang="x-default" href="https://grosen.tools/password-generator" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="/plugin/LizardTools/css/password_generator.css" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://grosen.tools/password-generator" />
@@ -27,8 +29,6 @@
     <meta name="twitter:title" content="<?= $viewTitle ?>" />
     <meta name="twitter:description" content="<?= $viewMetaDescription; ?>" />
     <meta name="twitter:image" content="https://grosen.tools/plugin/LizardTools/img/password.png">
-
-    <link rel="stylesheet" type="text/css" href="/plugin/LizardTools/css/password_generator.css" />
 
     <script type="application/javascript" src="/js/common.js"></script>
 
