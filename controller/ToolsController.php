@@ -56,7 +56,7 @@ class ToolsController extends BaseController
         'rar',  /* Archive */
     ];
 
-    private static int $_MAX_FILE_SIZE_IN_MB = 250;
+    private static int $_MAX_FILE_SIZE_IN_MB = 1000;
 
     private static int $_MAX_FILE_AGE_IN_HOURS = 24;
 
@@ -596,7 +596,6 @@ class ToolsController extends BaseController
     /* =============== PASSWORD TOOL =============== */
 
     public function jsGeneratePasswords( array $data ):array {
-
 
         $passwordLength = (isset($data['data']['passwordLength']) && $data['data']['passwordLength'] !== NULL && is_int($data['data']['passwordLength']) && $data['data']['passwordLength'] >= 6 && $data['data']['passwordLength'] <= 2048) ? $data['data']['passwordLength'] : NULL;
         $passwordCount = (isset($data['data']['passwordCount']) && $data['data']['passwordCount'] !== NULL && is_int($data['data']['passwordCount']) && $data['data']['passwordCount'] >= 1 && $data['data']['passwordCount'] <= 50) ? $data['data']['passwordCount'] : NULL;

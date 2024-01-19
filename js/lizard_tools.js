@@ -409,7 +409,7 @@ export function handleTransferUpload(event, elements, fileExtensionsAllowedJson)
 
                 // Tjekke om file-extension er tilladt
                 let inputFileSizeInMb = inputFileName.size / 1024 / 1024;
-                if (inputFileSizeInMb <= 250.0) {
+                if (inputFileSizeInMb <= 1000.0) {
 
                     uploadErrorMessageElement.innerText = '';
                     chooseFileLabelElement.style.visibility = 'hidden';
