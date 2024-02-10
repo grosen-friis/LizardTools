@@ -57,7 +57,7 @@ class ToolsController extends BaseController
         'rar',  /* Archive */
     ];
 
-    private static int $_MAX_FILE_SIZE_IN_MB = 1000;
+    private static int $_MAX_FILE_SIZE_IN_MB = 2000;
 
     private static int $_MAX_FILE_AGE_IN_HOURS = 24;
 
