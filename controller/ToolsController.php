@@ -47,7 +47,8 @@ class ToolsController extends BaseController
         'wmv',  /* Video */
         'mov',  /* Video */
         'mp4',  /* Video */
-        'mks'  /* Video */
+        'mks',  /* Video */
+        'mp3'  /* Sound */
     ];
 
     private static array $_FILE_ZIP_EXTENSIONS_ALLOWED = [
